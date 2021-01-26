@@ -20,7 +20,7 @@
         <!--. DOT -->
         
         <div class="dot">
-            <i v-for="i in img" class="far fa-window-minimize"></i>
+            <i v-for="(i, index) in img" @click="trova(index)" :class=" (index == counter) ? 'active' : '' "  class="far fa-window-minimize"></i>
         </div>
 
         <!--. NEXT  -->

@@ -16,6 +16,10 @@ var app = new Vue ({
 
         prev(){
             (this.counter == 0) ? this.counter = (this.img.length - 1) : this.counter--;
+        },
+
+        trova(i){
+            this.counter = i;
         }
     }
 });

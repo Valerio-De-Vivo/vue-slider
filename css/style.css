@@ -24,8 +24,13 @@
   padding: 10px;
 }
 
+.prev {
+  animation: left 1s ease-in-out infinite;
+}
+
 .next {
   right: 0;
+  animation: right 1s ease-in-out infinite;
 }
 
 .dot {
@@ -36,4 +41,36 @@
 
 .dot i {
   padding: 0 10px;
+}
+
+.active {
+  color: blueviolet;
+  animation: active 1s linear infinite;
+}
+
+@keyframes active {
+  from {
+    color: greenyellow;
+  }
+  to {
+    color: blue;
+  }
+}
+
+@keyframes right {
+  from {
+    right: 0;
+  }
+  to {
+    right: 10px;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: 10px;
+  }
 }
