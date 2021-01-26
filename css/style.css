@@ -4,3 +4,36 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+#slider-container {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.prev,
+.next,
+.dot {
+  position: absolute;
+  color: white;
+  font-size: 4em;
+  bottom: 0;
+  padding: 10px;
+}
+
+.next {
+  right: 0;
+}
+
+.dot {
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 0;
+}
+
+.dot i {
+  padding: 0 10px;
+}
